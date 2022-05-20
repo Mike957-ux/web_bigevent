@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大事件</title>
+    <title>大事件-后台主页</title>
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
     <link rel="stylesheet" href="/assets/css/index.css" />
     <!-- 导入第三方图标库 -->
@@ -22,16 +22,16 @@
 
             </ul>
             <ul class="layui-nav layui-layout-right">
-                <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+                <li class="layui-nav-item">
                     <a href="javascript:;" class="userinfo">
                         <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
                             class="layui-nav-img">
                         <span class="text-avatar">A</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本信息</a></dd>
-                        <dd><a href="">更改头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本信息</a></dd>
+                        <dd><a href="/user/user_avatar.html" target="fm">更改头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -69,9 +69,12 @@
                     <li class="layui-nav-item" data-anim="layui-anim-scaleSpring">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child  layui-anim-scaleSpring">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本信息</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更改头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>基本信息</a></dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>更改头像</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -89,9 +92,10 @@
     <script src="/assets/lib/layui/layui.js"></script>
     <script src="/assets/lib/jquery.js"></script>
     <!-- 导入自己封装baseAPI.js -->
-    <script src="/assets/js/base.Api.js"></script>
+    <script src="/assets/js/baseApi.js"></script>
     <!-- 导入自己js -->
     <script src="/assets/js/index.js"></script>
+
 </body>
 
 </html>
