@@ -61,9 +61,13 @@
                         <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理 </a>
                         <dl class="layui-nav-child layui-anim-down">
                             <dd>
-                                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章分类</a>
+                                <a href="/article/art_cate.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章类别</a>
                             </dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a href="/article/art_list.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a href="/article/art_pub.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>发表文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item" data-anim="layui-anim-scaleSpring">
@@ -82,13 +86,20 @@
         </div>
 
         <div class="layui-body">
-            <iframe src="/home/dashboard.html" frameborder="0" name="fm"></iframe>
+            <iframe src="/home/dashboard.html" frameborder="0" name="fm" id="iframe1"></iframe>
         </div>
 
         <div class="layui-footer">
             底部固定区域
         </div>
     </div>
+
+    <script>
+        // var childHtml = document.getElementById("iframe1").contentWindow;
+        // console.log(childHtml);
+
+    </script>
+
     <script src="/assets/lib/layui/layui.js"></script>
     <script src="/assets/lib/jquery.js"></script>
     <!-- 导入自己封装baseAPI.js -->

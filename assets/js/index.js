@@ -2,6 +2,7 @@
 $(function () {
     // 调用getUserInfo获取用户的信息
     getUserInfo()
+
     var layer = layui.layer
     // 退出功能
     $('#btnLogout').on('click', function () {
